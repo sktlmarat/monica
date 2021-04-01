@@ -114,8 +114,9 @@ return [
     // Conversation
     'conversation_blank' => 'Record conversations you have with :name on social media, SMS, ...',
     'conversation_delete_link' => 'Delete the conversation',
-    'conversation_edit_title' => 'Edit conversation',
+    'conversation_edit_title' => 'Edit the conversation',
     'conversation_edit_delete' => 'Are you sure you want to delete this conversation? Deletion is permanent.',
+    'conversation_edit_messages' => 'Edit messages',
     'conversation_add_success' => 'The conversation has been successfully added.',
     'conversation_edit_success' => 'The conversation has been successfully updated.',
     'conversation_delete_success' => 'The conversation has been successfully deleted.',

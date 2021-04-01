@@ -22,6 +22,8 @@
   .conversation-block {
     background-color: #D8E2E7;
   }
+
+
 </style>
 
 <template>
@@ -29,7 +31,8 @@
     <p class="mb2 b">
       {{ $t('people.conversation_add_what_was_said') }}
     </p>
-    <div class="pa3 ba b--gray-monica br3 conversation-block">
+    <a id="edit-conversation" href="" class="w-auto-ns w-100 mb2" @click.prevent="disableMessage()">{{ $t('people.conversation_edit_messages')  }}</a>
+    <div class="mt3 pa3 ba b--gray-monica br3 conversation-block">
       <div v-for="message in messages" :key="message.uid" class="relative">
         <div :class="message.author + ' absolute'"></div>
         <message

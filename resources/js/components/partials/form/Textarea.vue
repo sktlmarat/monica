@@ -29,6 +29,7 @@ textarea:focus {
       :rows="rows"
       class="br2 f5 w-100 ba b--black-40 pa2 outline-0"
       :style="textareaStyle"
+      :readonly="readonly"
       @input="$emit('input', buffer)"
     ></textarea>
   </div>
@@ -65,7 +66,11 @@ export default {
     rows: {
       type: Number,
       default: 0,
-    }
+    },
+    readonly: {
+      type: Boolean,
+      default: false
+    },
   },
 
   data() {
